@@ -9,12 +9,12 @@ import static com.codeborne.selenide.Selenide.*;
 public class SolutionsEnterprizeTest {
 
     @BeforeAll
-    static void beforeall() {
+    static void beforeAll() {
         Configuration.browserSize = "1450x700";
         Configuration.pageLoadStrategy = "eager";
     }
     @Test
-    void SearchSolutionsMain() {
+    void searchSolutionsMain() {
         open("https://github.com/");
         $(byText("Solutions")).hover();
         $("[href ='https://github.com/enterprise']").click();
